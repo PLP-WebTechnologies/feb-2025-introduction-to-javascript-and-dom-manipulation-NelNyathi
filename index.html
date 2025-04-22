@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💖 Motivational Quotes Board 💖</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      padding: 20px;
+      color: #4B004B;
+    }
+
+    header, footer {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      color: #ff1493;
+    }
+
+    .quote-box {
+      padding: 15px;
+      border-left: 5px solid #8a2be2;
+      background-color: #ffe4f3;
+      margin: 10px 0;
+      border-radius: 10px;
+      font-style: italic;
+    }
+
+    .highlight {
+      background-color: #ffccff;
+      border-color: #ff69b4;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #ff69b4;
+      color: white;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #ff85c1;
+    }
+
+    input {
+      padding: 10px;
+      width: 60%;
+      margin-top: 10px;
+      border: 2px solid #dda0dd;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #c71585;
+    }
+
+    footer p {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #8b008b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>💖 Motivational Quotes Board 💖</h1>
+    <p>Click the buttons to inspire or be inspired!</p>
+  </header>
+
+  <main>
+    <div id="mainQuote" class="quote-box">
+      "Believe you can and you're halfway there." — Theodore Roosevelt
+    </div>
+
+    <button id="changeQuoteBtn">Change Main Quote</button>
+    <button id="highlightQuoteBtn">Highlight Quote</button>
+
+    <h2>Add Your Own Quote:</h2>
+    <input type="text" id="quoteInput" placeholder="Type your quote here..." />
+    <button id="addQuoteBtn">Add Quote</button>
+    <button id="removeQuoteBtn">Remove Last Quote</button>
+
+    <section id="userQuotes">
+      <!-- User-added quotes will appear here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>✨ Made with JavaScript Magic & Love ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
